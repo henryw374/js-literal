@@ -2,15 +2,13 @@
 
 like inbuilt cljs #js literal, but recursive
 
-calling `clj->js` should be equivalent, but will be less efficient, 
+calling `clj->js` will be equivalent, but will be less efficient, 
 going via cljs datastructures. So, efficiency-wise this literal comes between `cljs->js` and using 
 `#js` literal all the way down.
 
 ## Usage 
 
 [![Clojars Project](https://img.shields.io/clojars/v/com.widdindustries/js-literal.svg)](https://clojars.org/com.widdindustries/js-literal)
-
-```
 
 in `my/source.cljs`
 
