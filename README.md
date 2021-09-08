@@ -13,7 +13,9 @@ going via cljs datastructures. So, efficiency-wise this literal comes between `c
 in `my/source.cljs`
 
 ```clojure
-(ns my.source)
+(ns my.source
+  ; no :require needed
+)
 
 (def my-literal #j/s [:a {:b [:c]}])
 
@@ -22,8 +24,6 @@ in `my/source.cljs`
 ; if you can improve on the above, IOW object literal syntax etc, please PR
 
 ```
-
-Before compiling, require `com.widdindustries.js`
 
 ## Development
 
