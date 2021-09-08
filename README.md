@@ -2,6 +2,10 @@
 
 like inbuilt cljs #js literal, but recursive
 
+calling `clj->js` should be equivalent, but will be less efficient, 
+going via cljs datastructures. So, efficiency-wise this literal comes between `cljs->js` and using 
+`#js` literal all the way down.
+
 ## Status
 
 just experimenting
