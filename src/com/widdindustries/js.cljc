@@ -7,10 +7,10 @@
       (cond 
         (map-entry? form) form
         (keyword? form) (name form)
-        (vector? form) `(.of js/Array ~@form)
-        (map? form)  `(.fromEntries js/Object (.of js/Array
+        (vector? form) `(js/Array.of ~@form)
+        (map? form)  `(js/Object.fromEntries (js/Array.of
                                                 ~@(map (fn [[k v]]
-                                                         (list '.of 'js/Array k v)) form)))
+                                                         (list 'js/Array.of k v)) form)))
         :else form))
     form))
 

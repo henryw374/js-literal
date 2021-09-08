@@ -25,6 +25,7 @@ in `my/source.cljs`
 (def my-literal #j/s [:a {:b [:c]}])
 
 ; compiles to => Array.of("a",Object.fromEntries(Array.of(Array.of("b",Array.of("c")))));
+; under advanced compilation, compiles to ["a",Object.fromEntries([["b",["c"]]])]
 
 ```
 

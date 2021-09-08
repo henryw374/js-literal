@@ -10,7 +10,7 @@
 (defn build []
   (cljs/build
     (->
-      {:optimizations :none
+      {:optimizations :advanced
        :infer-externs true
        :main          'some.test
        :process-shim  false

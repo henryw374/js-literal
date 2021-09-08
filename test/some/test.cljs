@@ -1,3 +1,3 @@
 (ns some.test)
 
-#j/s [:a {:b [:c]}]
+(js/console.log #j/s [:a {:b [:c]}])
