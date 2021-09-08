@@ -8,12 +8,7 @@ just experimenting
 
 ## Usage 
 
-depend on:  
-
-```clojure
-
-com.widdindustries/js-literal {:git/url "https://github.com/henryw374/js-literal.git"
-:sha "abc"}
+[![Clojars Project](https://img.shields.io/clojars/v/com.widdindustries/js-literal.svg)](https://clojars.org/com.widdindustries/js-literal)
 
 ```
 
@@ -26,6 +21,7 @@ in `my/source.cljs`
 
 ; compiles to => Array.of("a",Object.fromEntries(Array.of(Array.of("b",Array.of("c")))));
 ; under advanced compilation, compiles to ["a",Object.fromEntries([["b",["c"]]])]
+; if you can improve on the above, IOW object literal syntax etc, please PR
 
 ```
 
